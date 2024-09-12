@@ -5,6 +5,11 @@ We create our first console for tests:
 dotnet new console -n prueba
 ```
 
+Install these libraries, we will need them in this project:
+```
+dotnet add package Figgle --version 0.5.1
+```
+
 # Resources
 
 ## C#
