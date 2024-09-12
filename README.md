@@ -9,6 +9,8 @@ Install these libraries, we will need them in this project:
 ```
 dotnet add package Figgle --version 0.5.1
 ```
+More information:
+https://github.com/drewnoakes/figgle
 
 # Resources
 
