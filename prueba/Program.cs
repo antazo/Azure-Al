@@ -41,18 +41,31 @@ Console.WriteLine("\n\t");
 Console.WriteLine(@"What is your name?");
 
 // Create a string variable and get user input from the keyboard and store it in the variable
-var anyValue = Console.ReadLine();
-if (anyValue == "")
-    anyValue = "pimpin, no me has dicho como te llamas";
+var myInput = Console.ReadLine();
+if (myInput == "")
+    myInput = "pimpin, no me has dicho como te llamas";
 
 // Print the value of the variable (userName), which will display the input value
-Console.WriteLine(@"Hola " + anyValue + " ^_^");
+Console.WriteLine(@"Hola " + myInput + " ^_^\n");
 
 // Convert F to C
 int fahrenheit = 94;
 decimal celsius = (fahrenheit-32)*(5M/9M);
 
-Console.WriteLine("The temperature is " + celsius + " Celsius");
+double planck = 6.6262; //6.6262e-27 or 6,6262(local)
+
+Console.WriteLine($"The temperature is:\t\t\t\t {celsius.ToString("0.0")} Celsius"); // or Math.Round(celsius, 1)
+Console.WriteLine($"The value of PI is:\t\t\t\t {Math.PI}");
+Console.WriteLine($"The value of Planck's constant is:\t\t {planck}");
+Console.WriteLine($"The rest of Planck's constant divided by PI is:\t {(planck%Math.PI)}");
+
+Console.WriteLine("First 10 in the Fibonacci sequence: ");
+int prevInt = 0;
+for (int i = 0; i < 10; i++)
+{
+    Console.WriteLine(i + prevInt);
+    prevInt = i + prevInt;
+}
 
 Console.WriteLine();
 Console.WriteLine();
