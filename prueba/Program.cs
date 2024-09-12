@@ -54,17 +54,20 @@ decimal celsius = (fahrenheit-32)*(5M/9M);
 
 double planck = 6.6262; //6.6262e-27 or 6,6262(local)
 
-Console.WriteLine($"The temperature is:\t\t\t\t {celsius.ToString("0.0")} Celsius"); // or Math.Round(celsius, 1)
-Console.WriteLine($"The value of PI is:\t\t\t\t {Math.PI}");
-Console.WriteLine($"The value of Planck's constant is:\t\t {planck}");
+Console.WriteLine($"Temperature is:\t\t\t\t\t {celsius.ToString("0.0")} Celsius"); // or Math.Round(celsius, 1)
+Console.WriteLine($"Value of PI is:\t\t\t\t\t {Math.PI}");
+Console.WriteLine($"Planck's constant is:\t\t\t\t {planck}");
 Console.WriteLine($"The rest of Planck's constant divided by PI is:\t {(planck%Math.PI)}");
 
-Console.WriteLine("First 10 in the Fibonacci sequence: ");
-int prevInt = 0;
-for (int i = 0; i < 10; i++)
+Console.Write("First 10 numbers of the Fibonacci sequence: ");
+int a = 0, b = 1, c;
+Console.Write($"\t {a}, {b}");
+for (int i = 2; i < 10; i++)
 {
-    Console.WriteLine(i + prevInt);
-    prevInt = i + prevInt;
+    c = a + b;
+    Console.Write($", {c}");
+    a = b;
+    b = c;
 }
 
 Console.WriteLine();
