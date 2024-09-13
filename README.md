@@ -5,12 +5,15 @@ We create our first console for tests:
 dotnet new console -n prueba
 ```
 
-Install these libraries, we will need them in this project:
+Libraries used in this project:
 ```
+# These are not compatible with net8.0
 dotnet add package Figgle --version 0.5.1
+dotnet add package ConsoleTables --version 2.4.2
 ```
 More information:
 https://github.com/drewnoakes/figgle
+https://github.com/khalidabuhakmeh/ConsoleTables
 
 # Resources
 
