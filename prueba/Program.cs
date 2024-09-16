@@ -185,6 +185,89 @@ do
         break;
 } while (daysUntilExpiration > 0);
 
+Console.WriteLine();
+Console.WriteLine();
+
+
+Console.WriteLine("Desafío de pedido fraudulento");
+Console.WriteLine("-----------------------------");
+
+string[] fraudulentOrderIDs = [ 
+    "B123",
+    "C234",
+    "A345",
+    "C15",
+    "B177",
+    "G3003",
+    "C235",
+    "B179"
+ ];
+
+foreach (string fraudulentOrderID in fraudulentOrderIDs)
+{
+    if (fraudulentOrderID.StartsWith('B'))
+        Console.WriteLine("The name " + fraudulentOrderID + " starts with 'B'!");
+    else if (fraudulentOrderID.StartsWith('C'))
+        Console.WriteLine("The name " + fraudulentOrderID + " does not start with 'B'!");
+}
+
+Console.WriteLine();
+Console.WriteLine();
+
+
+Console.WriteLine("");
+Console.WriteLine("");
+/*
+  The following code creates five random OrderIDs
+  to test the fraud detection process.  OrderIDs 
+  consist of a letter from A to E, and a three
+  digit number. Ex. A123.
+*/
+random = new Random();
+string[] orderIDs = new string[5];
+
+for (int i = 0; i < orderIDs.Length; i++)
+{
+    int prefixValue = random.Next(65, 70);
+    string prefix = Convert.ToChar(prefixValue).ToString();
+    string suffix = random.Next(1, 1000).ToString("000");
+
+    orderIDs[i] = prefix + suffix;
+}
+
+foreach (var orderID in orderIDs)
+{
+    Console.WriteLine(orderID);
+}
+
+
+Console.WriteLine();
+Console.WriteLine();
+
+
+Console.WriteLine("Data Types");
+Console.WriteLine("----------");
+
+Console.WriteLine("Signed integral types:");
+
+Console.WriteLine($"sbyte  : {sbyte.MinValue} to {sbyte.MaxValue}");
+Console.WriteLine($"short  : {short.MinValue} to {short.MaxValue}");
+Console.WriteLine($"int    : {int.MinValue} to {int.MaxValue}");
+Console.WriteLine($"long   : {long.MinValue} to {long.MaxValue}");
+
+Console.WriteLine("");
+Console.WriteLine("Unsigned integral types:");
+
+Console.WriteLine($"byte   : {byte.MinValue} to {byte.MaxValue}");
+Console.WriteLine($"ushort : {ushort.MinValue} to {ushort.MaxValue}");
+Console.WriteLine($"uint   : {uint.MinValue} to {uint.MaxValue}");
+Console.WriteLine($"ulong  : {ulong.MinValue} to {ulong.MaxValue}");
+
+Console.WriteLine("");
+Console.WriteLine("Floating point types:");
+Console.WriteLine($"float  : {float.MinValue} to {float.MaxValue} (with ~6-9 digits of precision)");
+Console.WriteLine($"double : {double.MinValue} to {double.MaxValue} (with ~15-17 digits of precision)");
+Console.WriteLine($"decimal: {decimal.MinValue} to {decimal.MaxValue} (with 28-29 digits of precision)");
 
 Console.WriteLine();
 Console.WriteLine();
