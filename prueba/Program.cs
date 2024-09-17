@@ -281,32 +281,76 @@ Console.WriteLine("");
 Console.WriteLine("");
 
 
-/*
-  The following code creates five random OrderIDs
-  to test the fraud detection process.  OrderIDs 
-  consist of a letter from A to E, and a three
-  digit number. Ex. A123.
-*/
-random = new Random();
-string[] orderIDs = new string[5];
 
-for (int i = 0; i < orderIDs.Length; i++)
+Console.WriteLine("If to Switch Statements");
+Console.WriteLine("-----------------------");
+
+// SKU = Stock Keeping Unit. 
+// SKU value format: <product #>-<2-letter color code>-<size code>
+string sku = "01-MN-L";
+
+string[] product = sku.Split('-');
+
+string type = "";
+string color = "";
+string size = "";
+
+// Product number
+switch (product[0])
 {
-    int prefixValue = random.Next(65, 70);
-    string prefix = Convert.ToChar(prefixValue).ToString();
-    string suffix = random.Next(1, 1000).ToString("000");
-
-    orderIDs[i] = prefix + suffix;
+    case "01":
+        type = "Sweat shirt";
+        break;
+    case "02":
+        type = "T-Shirt";
+        break;
+    case "03":
+        type = "Sweat pants";
+        break;
+    default:
+        type = "Other";
+        break;
 }
 
-foreach (var orderID in orderIDs)
+// Letter code for color
+switch (product[1])
 {
-    Console.WriteLine(orderID);
+    case "BL":
+        color = "Black";
+        break;
+    case "MN":
+        color = "Maroon";
+        break;
+    case "WH":
+        color = "White";
+        break;
+    default:
+        color = "Other";
+        break;
 }
 
+// Size code
+switch (product[2])
+{
+    case "S":
+        size = "Small";
+        break;
+    case "M":
+        size = "Medium";
+        break;
+    case "L":
+        size = "Large";
+        break;
+    default:
+        size = "One Size Fits All";
+        break;
+}
 
-Console.WriteLine();
-Console.WriteLine();
+Console.WriteLine($"Product: {size} {color} {type}");
+
+Console.WriteLine("");
+Console.WriteLine("");
+
 
 
 Console.WriteLine("Data Types");
