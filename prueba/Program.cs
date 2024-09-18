@@ -122,32 +122,6 @@ Console.WriteLine();
 Console.WriteLine();
 
 
-Console.WriteLine("Desafío de FizzBuzz");
-Console.WriteLine("-------------------");
-
-/*
-Estas son las reglas de FizzBuzz que necesita implementar en el proyecto de código:
-
-Valores de salida de 1 a 100, un número por línea, dentro del bloque de código de una instrucción de iteración.
-Si el valor actual es divisible por 3, se imprime el término Fizz junto al número.
-Si el valor actual es divisible por 5, se imprime el término Buzz junto al número.
-Si el valor actual es divisible por 3 y por 5, se imprime el término FizzBuzz junto al número.
-*/
-
-for (int i = 1; i < 101; i++)
-{
-    if ((i % 3 == 0) && (i % 5 == 0))
-        Console.WriteLine($"{i} - FizzBuzz");
-    else if (i % 3 == 0)
-        Console.WriteLine($"{i} - Fizz");
-    else if (i % 5 == 0)
-        Console.WriteLine($"{i} - Buzz");
-    else
-        Console.WriteLine($"{i}");
-}
-
-Console.WriteLine();
-Console.WriteLine();
 
 Console.WriteLine("Desafío para aplicar reglas de negocio");
 Console.WriteLine("--------------------------------------");
@@ -353,33 +327,6 @@ Console.WriteLine("");
 
 
 
-Console.WriteLine("Data Types");
-Console.WriteLine("----------");
-
-Console.WriteLine("Signed integral types:");
-
-Console.WriteLine($"sbyte  : {sbyte.MinValue} to {sbyte.MaxValue}");
-Console.WriteLine($"short  : {short.MinValue} to {short.MaxValue}");
-Console.WriteLine($"int    : {int.MinValue} to {int.MaxValue}");
-Console.WriteLine($"long   : {long.MinValue} to {long.MaxValue}");
-
-Console.WriteLine("");
-Console.WriteLine("Unsigned integral types:");
-
-Console.WriteLine($"byte   : {byte.MinValue} to {byte.MaxValue}");
-Console.WriteLine($"ushort : {ushort.MinValue} to {ushort.MaxValue}");
-Console.WriteLine($"uint   : {uint.MinValue} to {uint.MaxValue}");
-Console.WriteLine($"ulong  : {ulong.MinValue} to {ulong.MaxValue}");
-
-Console.WriteLine("");
-Console.WriteLine("Floating point types:");
-Console.WriteLine($"float  : {float.MinValue} to {float.MaxValue} (with ~6-9 digits of precision)");
-Console.WriteLine($"double : {double.MinValue} to {double.MaxValue} (with ~15-17 digits of precision)");
-Console.WriteLine($"decimal: {decimal.MinValue} to {decimal.MaxValue} (with 28-29 digits of precision)");
-
-Console.WriteLine();
-Console.WriteLine();
-
 Console.WriteLine("Heads or Tails");
 Console.WriteLine("--------------");
 
@@ -407,6 +354,146 @@ switch (permission)
         Console.WriteLine("You do not have sufficient privileges.");
         break;
 }
+
+Console.WriteLine();
+Console.WriteLine();
+
+
+
+
+Console.WriteLine("Data Types");
+Console.WriteLine("----------");
+
+Console.WriteLine("Signed integral types:");
+
+Console.WriteLine($"sbyte  : {sbyte.MinValue} to {sbyte.MaxValue}");
+Console.WriteLine($"short  : {short.MinValue} to {short.MaxValue}");
+Console.WriteLine($"int    : {int.MinValue} to {int.MaxValue}");
+Console.WriteLine($"long   : {long.MinValue} to {long.MaxValue}");
+
+Console.WriteLine("");
+Console.WriteLine("Unsigned integral types:");
+
+Console.WriteLine($"byte   : {byte.MinValue} to {byte.MaxValue}");
+Console.WriteLine($"ushort : {ushort.MinValue} to {ushort.MaxValue}");
+Console.WriteLine($"uint   : {uint.MinValue} to {uint.MaxValue}");
+Console.WriteLine($"ulong  : {ulong.MinValue} to {ulong.MaxValue}");
+
+Console.WriteLine("");
+Console.WriteLine("Floating point types:");
+Console.WriteLine($"float  : {float.MinValue} to {float.MaxValue} (with ~6-9 digits of precision)");
+Console.WriteLine($"double : {double.MinValue} to {double.MaxValue} (with ~15-17 digits of precision)");
+Console.WriteLine($"decimal: {decimal.MinValue} to {decimal.MaxValue} (with 28-29 digits of precision)");
+
+Console.WriteLine();
+Console.WriteLine();
+
+
+
+Console.WriteLine("Desafío de FizzBuzz");
+Console.WriteLine("-------------------");
+
+/*
+Estas son las reglas de FizzBuzz que necesita implementar en el proyecto de código:
+
+Valores de salida de 1 a 100, un número por línea, dentro del bloque de código de una instrucción de iteración.
+Si el valor actual es divisible por 3, se imprime el término Fizz junto al número.
+Si el valor actual es divisible por 5, se imprime el término Buzz junto al número.
+Si el valor actual es divisible por 3 y por 5, se imprime el término FizzBuzz junto al número.
+*/
+
+for (int i = 1; i < 101; i++)
+{
+    if ((i % 3 == 0) && (i % 5 == 0))
+        Console.WriteLine($"{i} - FizzBuzz");
+    else if (i % 3 == 0)
+        Console.WriteLine($"{i} - Fizz");
+    else if (i % 5 == 0)
+        Console.WriteLine($"{i} - Buzz");
+    else
+        Console.WriteLine($"{i}");
+}
+
+Console.WriteLine();
+Console.WriteLine();
+
+
+string value = "102";
+int result = 0;
+if (int.TryParse(value, out result))
+{
+   Console.WriteLine($"Measurement: {result}");
+}
+else
+{
+   Console.WriteLine("Unable to report the measurement.");
+}
+Console.WriteLine($"Measurement (w/ offset): {50 + result}");
+
+
+string[] values = { "12.3", "45", "ABC", "11", "DEF" };
+
+decimal total = 0m;
+string message = "";
+
+foreach (var val in values)
+{
+    decimal number; // stores the TryParse "out" value
+    if (decimal.TryParse(val, out number))
+    {
+        total += number;
+    } else
+    {
+        message += val;
+    }
+}
+
+Console.WriteLine($"Message: {message}");
+Console.WriteLine($"Total: {total}");
+
+
+
+Console.WriteLine();
+Console.WriteLine();
+
+
+
+
+Console.WriteLine("Desafío de la batalla del juego de rol");
+Console.WriteLine("--------------------------------------");
+
+int heroHealth = 10;
+int heroDamage = 0;
+int monsterHealth = 10;
+int monsterDamage = 0;
+
+//var initiative = new Random().Next(0, 2) == 0 ? "Hero" : "Monster"; // Randomly select who attacks first
+var initiative = "Hero"; // Hero attacks first
+do
+{
+    if (initiative == "Hero")
+    {
+        heroDamage = new Random().Next(1, 11);
+        monsterHealth -= heroDamage;
+
+        Console.WriteLine($"Monster was damaged and lost {heroDamage} health and now has {monsterHealth} health left.");
+
+        initiative = "Monster";
+    }
+    else
+    {
+        monsterDamage = new Random().Next(1, 11);
+        heroHealth -= monsterDamage;
+
+        Console.WriteLine($"Hero was damaged and lost {monsterDamage} health and now has {heroHealth} health left.");
+
+        initiative = "Hero";
+    }
+
+} while (heroHealth > 0 && monsterHealth > 0);
+
+Console.WriteLine(heroHealth > 0 ? "Hero wins!" : "Monster wins!");
+
 
 Console.WriteLine();
 Console.WriteLine();
