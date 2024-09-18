@@ -462,9 +462,9 @@ Console.WriteLine();
 Console.WriteLine("Desafío de la batalla del juego de rol");
 Console.WriteLine("--------------------------------------");
 
-int heroHealth = 10;
+int heroHealth = 100;
 int heroDamage = 0;
-int monsterHealth = 10;
+int monsterHealth = 100;
 int monsterDamage = 0;
 
 //var initiative = new Random().Next(0, 2) == 0 ? "Hero" : "Monster"; // Randomly select who attacks first
@@ -492,7 +492,7 @@ do
 
 } while (heroHealth > 0 && monsterHealth > 0);
 
-Console.WriteLine(heroHealth > 0 ? "Hero wins!" : "Monster wins!");
+Console.WriteLine(heroHealth > 0 ? "Hero wins!" : "Monster wins! GAME OVER!! INSERT COIN TO CONTINUE");
 
 
 Console.WriteLine();
