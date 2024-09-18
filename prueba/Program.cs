@@ -361,35 +361,6 @@ Console.WriteLine();
 
 
 
-Console.WriteLine("Data Types");
-Console.WriteLine("----------");
-
-Console.WriteLine("Signed integral types:");
-
-Console.WriteLine($"sbyte  : {sbyte.MinValue} to {sbyte.MaxValue}");
-Console.WriteLine($"short  : {short.MinValue} to {short.MaxValue}");
-Console.WriteLine($"int    : {int.MinValue} to {int.MaxValue}");
-Console.WriteLine($"long   : {long.MinValue} to {long.MaxValue}");
-
-Console.WriteLine("");
-Console.WriteLine("Unsigned integral types:");
-
-Console.WriteLine($"byte   : {byte.MinValue} to {byte.MaxValue}");
-Console.WriteLine($"ushort : {ushort.MinValue} to {ushort.MaxValue}");
-Console.WriteLine($"uint   : {uint.MinValue} to {uint.MaxValue}");
-Console.WriteLine($"ulong  : {ulong.MinValue} to {ulong.MaxValue}");
-
-Console.WriteLine("");
-Console.WriteLine("Floating point types:");
-Console.WriteLine($"float  : {float.MinValue} to {float.MaxValue} (with ~6-9 digits of precision)");
-Console.WriteLine($"double : {double.MinValue} to {double.MaxValue} (with ~15-17 digits of precision)");
-Console.WriteLine($"decimal: {decimal.MinValue} to {decimal.MaxValue} (with 28-29 digits of precision)");
-
-Console.WriteLine();
-Console.WriteLine();
-
-
-
 Console.WriteLine("Desafío de FizzBuzz");
 Console.WriteLine("-------------------");
 
@@ -497,3 +468,57 @@ Console.WriteLine(heroHealth > 0 ? "Hero wins!" : "Monster wins! GAME OVER!! INS
 
 Console.WriteLine();
 Console.WriteLine();
+
+
+
+
+
+
+Console.WriteLine("Data Types");
+Console.WriteLine("----------");
+
+Console.WriteLine("Signed integral types:");
+
+Console.WriteLine($"sbyte  : {sbyte.MinValue} to {sbyte.MaxValue}");
+Console.WriteLine($"short  : {short.MinValue} to {short.MaxValue}");
+Console.WriteLine($"int    : {int.MinValue} to {int.MaxValue}");
+Console.WriteLine($"long   : {long.MinValue} to {long.MaxValue}");
+
+Console.WriteLine("");
+Console.WriteLine("Unsigned integral types:");
+
+Console.WriteLine($"byte   : {byte.MinValue} to {byte.MaxValue}");
+Console.WriteLine($"ushort : {ushort.MinValue} to {ushort.MaxValue}");
+Console.WriteLine($"uint   : {uint.MinValue} to {uint.MaxValue}");
+Console.WriteLine($"ulong  : {ulong.MinValue} to {ulong.MaxValue}");
+
+Console.WriteLine("");
+Console.WriteLine("Floating point types:");
+Console.WriteLine($"float  : {float.MinValue} to {float.MaxValue} (with ~6-9 digits of precision)");
+Console.WriteLine($"double : {double.MinValue} to {double.MaxValue} (with ~15-17 digits of precision)");
+Console.WriteLine($"decimal: {decimal.MinValue} to {decimal.MaxValue} (with 28-29 digits of precision)");
+
+Console.WriteLine();
+Console.WriteLine();
+
+
+
+int value1 = 11;
+decimal value2 = 6.2m;
+float value3 = 4.3f;
+
+// The Convert class is best for converting the fractional decimal numbers into whole integer numbers
+// Convert.ToInt32() rounds up the way you would expect.
+int result1 = Convert.ToInt32(value1 / value2);
+Console.WriteLine($"Divide value1 by value2, display the result as an int: {result1}");
+
+decimal result2 = value2 / (decimal)value3;
+Console.WriteLine($"Divide value2 by value3, display the result as a decimal: {result2}");
+
+float result3 = value3 / value1;
+Console.WriteLine($"Divide value3 by value1, display the result as a float: {result3}");
+
+Console.WriteLine();
+Console.WriteLine();
+
+
