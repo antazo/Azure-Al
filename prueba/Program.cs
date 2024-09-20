@@ -24,10 +24,11 @@ Console.WriteLine(Interpolation.GenerateInterpolation());
 Console.WriteLine(Part4Module5.GenerateSubstringIndexOf());
 Console.WriteLine(Part4Module5.GenerateIndexOfLastIndexOf());
 Console.WriteLine(Part4Module5.GenerateRemoveReplace());
+Console.WriteLine(Part4Module5.GenerateDesafio());
 #endregion
 */
 
 // Pending
-Console.WriteLine(Part4Module5.GenerateDesafio());
+Console.WriteLine(Dates.GenerateDates());
 
 
