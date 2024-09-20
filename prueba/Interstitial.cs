@@ -3,9 +3,6 @@ using System.Text;
 // See https://aka.ms/new-console-template for more information
 //using Figgle;
 // Sample for the Environment.GetEnvironmentVariables method
-using System;
-using System.Collections;
-using System.Reflection.Metadata.Ecma335;
 
 //Console.BackgroundColor = ConsoleColor.Blue;
 //Console.Write("Lorem ipsum dolor sit amet consectetur adipiscing elit, in fringilla maecenas lobortis duis turpis risus, praesent porta facilisis nostra aptent nibh. Nulla massa taciti vulputate fringilla ac cursus mollis pharetra, penatibus iaculis molestie praesent arcu nibh ridiculus. Donec pharetra vulputate varius felis scelerisque phasellus per aliquam class, viverra dui iaculis urna himenaeos turpis posuere ac, curabitur auctor ultricies neque in duis vivamus habitasse.");
@@ -53,7 +50,12 @@ return $@"
 
 {japaneseQuijote}
 
-Hello {EnvironmentVariableTarget.User} ^_^
+Hello {Environment.UserName}, your machine name is {Environment.MachineName} ^_^
+
+You are currently executing the following process:
+{Environment.ProcessPath}
+
+Have a nice day...
 
 ";
     }
