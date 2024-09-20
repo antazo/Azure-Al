@@ -20,11 +20,14 @@ Console.WriteLine(Rpg.GenerateRpg());
 Console.WriteLine(DataTypes.GenerateDataTypes());
 Console.WriteLine(ConvertToInt32.GenerateConvertToInt32());
 Console.WriteLine(SplitJoinReverse.GenerateSplitJoinReverse());
+Console.WriteLine(Interpolation.GenerateInterpolation());
+Console.WriteLine(Part4Module5.GenerateSubstringIndexOf());
+Console.WriteLine(Part4Module5.GenerateIndexOfLastIndexOf());
+Console.WriteLine(Part4Module5.GenerateRemoveReplace());
 #endregion
 */
 
 // Pending
-Console.WriteLine(Interpolation.GenerateInterpolation());
-//Console.WriteLine(Interpolation.GenerateInterpolation());
+Console.WriteLine(Part4Module5.GenerateDesafio());
 
 
