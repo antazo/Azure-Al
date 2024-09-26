@@ -27,10 +27,11 @@ Console.WriteLine(Part4Module5.GenerateRemoveReplace());
 Console.WriteLine(Part4Module5.GenerateDesafio());
 Console.WriteLine(Part4Module5.GenerateDesafio());
 Console.WriteLine(Part4Module5.GenerateDesafioSolucion());
+Console.WriteLine(Dates.GenerateDates());
 #endregion
 */
 
 // Pending
-Console.WriteLine(Dates.GenerateDates());
+Console.WriteLine(Part5Module56.GenerateEmailAddresses());
 
 
