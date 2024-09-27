@@ -1,4 +1,4 @@
-public class Part4Module5
+public class Part4
 {
     public static string GenerateSubstringIndexOf()
     {

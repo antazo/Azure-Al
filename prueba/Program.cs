@@ -21,17 +21,20 @@ Console.WriteLine(DataTypes.GenerateDataTypes());
 Console.WriteLine(ConvertToInt32.GenerateConvertToInt32());
 Console.WriteLine(SplitJoinReverse.GenerateSplitJoinReverse());
 Console.WriteLine(Interpolation.GenerateInterpolation());
-Console.WriteLine(Part4Module5.GenerateSubstringIndexOf());
-Console.WriteLine(Part4Module5.GenerateIndexOfLastIndexOf());
-Console.WriteLine(Part4Module5.GenerateRemoveReplace());
-Console.WriteLine(Part4Module5.GenerateDesafio());
-Console.WriteLine(Part4Module5.GenerateDesafio());
-Console.WriteLine(Part4Module5.GenerateDesafioSolucion());
+Console.WriteLine(Part4.GenerateSubstringIndexOf());
+Console.WriteLine(Part4.GenerateIndexOfLastIndexOf());
+Console.WriteLine(Part4.GenerateRemoveReplace());
+Console.WriteLine(Part4.GenerateDesafio());
+Console.WriteLine(Part4.GenerateDesafio());
+Console.WriteLine(Part4.GenerateDesafioSolucion());
 Console.WriteLine(Dates.GenerateDates());
+Console.WriteLine(Part5.GenerateEmailAddresses());
+Console.WriteLine(Part5.GenerateBooleans());
+Console.WriteLine(Part5.GenerateReusedMethods());
 #endregion
 */
 
 // Pending
-Console.WriteLine(Part5Module56.GenerateEmailAddresses());
+Console.WriteLine(Part5.GenerateIPnew());
 
 
