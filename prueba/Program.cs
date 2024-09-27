@@ -36,5 +36,6 @@ Console.WriteLine(Part5.GenerateReusedMethods());
 
 // Pending
 Console.WriteLine(Part5.GenerateIPnew());
+Console.WriteLine(Part5.GenerateRPG02());
 
 
