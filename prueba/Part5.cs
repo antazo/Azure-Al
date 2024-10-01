@@ -413,7 +413,7 @@ public class Part5
         int foodY = 0;
 
         // Available player and food strings
-        string[] states = { "(͡ ° ͜ʖ ͡ °)", "(˵ ͡° ͜ʖ ͡°˵)", "	(ﾉ◕ヮ◕)" };
+        string[] states = { "(͡ ° ͜ʖ ͡ °)", "(˵ ͡° ͜ʖ ͡°˵)", "(ﾉ◕ヮ◕)" };
         string[] foods = { "@@ CHULETON @@", "$$ PASTA $$", "## GOFRES ##" };
 
         // Current player string displayed in the Console

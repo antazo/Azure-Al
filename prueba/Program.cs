@@ -5,6 +5,7 @@ Console.WriteLine(Interstitial.GenerateIntro());
 
 /* Archived lectures
 #region
+
 Console.WriteLine(Template.GenerateSample());
 Console.WriteLine(CelsiusToFarenheit.GenerateFarenheit());
 Console.WriteLine(Gpa.GenerateGpa());
@@ -37,10 +38,14 @@ Console.WriteLine(Part5.GenerateReusedMethods());
 Console.WriteLine(Part5.GenerateIPnew());
 Console.WriteLine(Part5.GenerateRPG02());
 Console.WriteLine(Part5.GenerateDiceGame());
+Console.WriteLine(Part5.GenerateMiniGame());
+
+Console.WriteLine(Part6.GenerateDebugEnvironment());
+
 #endregion
 */
 
 // Pending
-Console.WriteLine(Part5.GenerateMiniGame());
+Console.WriteLine(Part6.GenerateDebugEnvironment());
 
 
