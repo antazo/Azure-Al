@@ -36,11 +36,11 @@ Console.WriteLine(Part5.GenerateBooleans());
 Console.WriteLine(Part5.GenerateReusedMethods());
 Console.WriteLine(Part5.GenerateIPnew());
 Console.WriteLine(Part5.GenerateRPG02());
+Console.WriteLine(Part5.GenerateDiceGame());
 #endregion
 */
 
 // Pending
-Console.WriteLine(Part5.GenerateDiceGame());
-//Console.WriteLine(Part5.GenerateMiniGame());
+Console.WriteLine(Part5.GenerateMiniGame());
 
 

@@ -413,8 +413,8 @@ public class Part5
         int foodY = 0;
 
         // Available player and food strings
-        string[] states = { "(˵ ͡° ͜ʖ ͡°˵)", "(｡◕‿‿◕｡)", "(ㆆ _ ㆆ)" };
-        string[] foods = { "@ CHULETON @", "$ SPAGHETTI $", "# GOFRES #" };
+        string[] states = { "(͡ ° ͜ʖ ͡ °)", "(˵ ͡° ͜ʖ ͡°˵)", "	(ﾉ◕ヮ◕)" };
+        string[] foods = { "@@ CHULETON @@", "$$ PASTA $$", "## GOFRES ##" };
 
         // Current player string displayed in the Console
         string player = states[0];
@@ -425,7 +425,32 @@ public class Part5
         InitializeGame();
         while (!shouldExit)
         {
-            Move();
+            if (TerminalResized())
+            {
+                Console.Clear();
+                Console.Write("Console was resized. Program exiting.");
+                shouldExit = true;
+            }
+            else
+            {
+                if (PlayerIsFaster())
+                {
+                    Move(1, false);
+                }
+                else if (PlayerIsSick())
+                {
+                    FreezePlayer();
+                }
+                else
+                {
+                    Move(otherKeysExit: false);
+                }
+                if (GotFood())
+                {
+                    ChangePlayer();
+                    ShowFood();
+                }
+            }
         }
 
         // Returns true if the Terminal was resized 
@@ -449,6 +474,24 @@ public class Part5
             Console.Write(foods[food]);
         }
 
+        // Returns true if the player location matches the food location
+        bool GotFood()
+        {
+            return playerY == foodY && playerX == foodX;
+        }
+
+        // Returns true if the player appearance represents a sick state
+        bool PlayerIsSick()
+        {
+            return player.Equals(states[2]);
+        }
+
+        // Returns true if the player appearance represents a fast state
+        bool PlayerIsFaster()
+        {
+            return player.Equals(states[1]);
+        }
+
         // Changes the player to match the food consumed
         void ChangePlayer()
         {
@@ -465,7 +508,7 @@ public class Part5
         }
 
         // Reads directional input from the Console and moves the player
-        void Move()
+        void Move(int speed = 1, bool otherKeysExit = false)
         {
             int lastX = playerX;
             int lastY = playerY;
@@ -479,13 +522,17 @@ public class Part5
                     playerY++;
                     break;
                 case ConsoleKey.LeftArrow:
-                    playerX--;
+                    playerX -= speed;
                     break;
                 case ConsoleKey.RightArrow:
-                    playerX++;
+                    playerX += speed;
                     break;
                 case ConsoleKey.Escape:
                     shouldExit = true;
+                    break;
+                default:
+                    // Exit if any other keys are pressed
+                    shouldExit = otherKeysExit;
                     break;
             }
 
