@@ -46,6 +46,6 @@ Console.WriteLine(Part6.GenerateDebugEnvironment());
 */
 
 // Pending
-Console.WriteLine(Part6.GenerateDebugEnvironment());
+Console.WriteLine(Part5.GenerateMiniGame());
 
 
