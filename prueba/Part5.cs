@@ -1,6 +1,3 @@
-using System;
-using System.Linq;
-
 public class Part5
 {
     public static string GenerateBooleans()

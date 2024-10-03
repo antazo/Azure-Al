@@ -1,6 +1,7 @@
-﻿
-Console.Clear();
+﻿using System;
+using System.Linq;
 
+// Console.Clear();
 Console.WriteLine(Interstitial.GenerateIntro());
 
 /* Archived lectures
@@ -46,6 +47,5 @@ Console.WriteLine(Part6.GenerateDebugEnvironment());
 */
 
 // Pending
-Console.WriteLine(Part5.GenerateMiniGame());
-
+Console.WriteLine(Debugging.GenerateDebugging());
 
