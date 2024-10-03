@@ -1,3 +1,4 @@
+// dotnet add pruebaTest/pruebaTest.csproj reference prueba/prueba.csproj
 namespace pruebaTest;
 
 [TestClass]
