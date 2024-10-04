@@ -5,6 +5,16 @@ We create our first console for tests:
 dotnet new console -n prueba
 ```
 
+After enabling unit tests to the project, add the references:
+```
+dotnet add pruebaTest/pruebaTest.csproj reference prueba/prueba.csproj
+```
+
+Nuget needed for unit testing:
+```
+https://api.nuget.org/v3/index.json
+```
+
 Libraries used in this project:
 ```
 # These are not compatible with net8.0
