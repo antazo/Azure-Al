@@ -54,7 +54,7 @@ class Program
         */
 
         // Pending
-        Console.WriteLine(Calculator.GenerateCalculator);
+        Console.WriteLine(Calculator.GenerateCalculator());
 
 
     }
