@@ -67,7 +67,7 @@ public class CodeKata
         }
         return result;
     }
-    public static bool Multi7(int i)
+    public static bool Mod7(int i)
     {
         bool result = false;
         if (i % 7 == 0) 
@@ -77,7 +77,7 @@ public class CodeKata
         return result;
     }
 
-    public static bool Primo(int i)
+    public static bool IsPrime(int i)
     {
         // Es numero primo?
 
@@ -102,7 +102,7 @@ public class CodeKata
         string result = "";
         for (int i = 0; i < 100; i++)
         {
-            if (Primo(i))
+            if (IsPrime(i))
             {
                 result += $"{i}, ";
             }
