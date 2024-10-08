@@ -51,11 +51,12 @@ class Program
         Console.WriteLine(Debugging.GenerateDebugging());
         Console.WriteLine(Calculator.GenerateCalculator());
 
+        Console.WriteLine(CodeKata.GeneratePrimos());
         #endregion
         */
 
         // Pending
-        Console.WriteLine(CodeKata.GeneratePrimos());
+        Console.WriteLine(CodeKataBowling.GenerateBowling());
 
 
     }
