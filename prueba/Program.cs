@@ -49,12 +49,13 @@ class Program
 
         Console.WriteLine(Part6.GenerateDebugEnvironment());
         Console.WriteLine(Debugging.GenerateDebugging());
+        Console.WriteLine(Calculator.GenerateCalculator());
 
         #endregion
         */
 
         // Pending
-        Console.WriteLine(Calculator.GenerateCalculator());
+        Console.WriteLine(CodeKata.GeneratePrimos());
 
 
     }
