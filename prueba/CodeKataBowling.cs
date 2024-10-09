@@ -7,8 +7,8 @@ public class CodeKataBowling
     */
     public static string GenerateBowling()
     {
-        Console.WriteLine("Desafío de Bolos");
-        Console.WriteLine("-------------------");
+        Console.WriteLine("Desafío de Bolos (sin puntuación)");
+        Console.WriteLine("--------------------------------");
         string result = "";
 
         int numTurnos = 10;
@@ -30,7 +30,7 @@ public class CodeKataBowling
                     int bolosTirados = tirarBolos(bolos);
                     if(bolosTirados == 10)
                     {
-                        result += $"Strike, ";
+                        result += $"Strike! ";
                         bolos = 0;
                         break;
                     }
@@ -39,7 +39,7 @@ public class CodeKataBowling
                     bolos -= bolosTirados;
                     if(bolos == 0)
                     {
-                        result += $"Spare, ";
+                        result += $"Spare! ";
                         bolos = 0;
                         break;
                     }
