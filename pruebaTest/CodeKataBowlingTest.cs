@@ -10,12 +10,12 @@ public class CodeKataBowlingTest
         // Arrange
         Random random = new Random();
         
-        int expected = random.Next(1, 11);
+        int expected = 11;
 
         // Act
-        int actual = CodeKataBowling.tirarBolos();
+        int actual = CodeKataBowling.tirarBolos(random.Next(0, 11));
 
         // Assert
-        Assert.IsTrue(actual<11);
+        Assert.IsTrue(actual<expected);
     }
 }

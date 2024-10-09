@@ -16,10 +16,10 @@ public class CodeKataBowling
 
         // Para 2 jugadores
         int numJugadores = 2;
-        int puntosJugador1 = 0;
-        int puntosJugador2 = 0;
+        //int puntosJugador1 = 0;
+        //int puntosJugador2 = 0;
     
-        /*for (int i = 0; i < numTurnos; i++)
+        for (int i = 0; i < numTurnos; i++)
         {
             for (int j = 0; j < numJugadores; j++)
             {
@@ -47,15 +47,15 @@ public class CodeKataBowling
                 result += $" Quedan {bolos}, ";
                 result += "\n";
             }
-        }*/
+        }
  
         return result;
     }
 
-    public static int tirarBolos()
+    public static int tirarBolos(int bolosRestantes)
     {
         // i son los bolos que quedan
         Random random = new Random();
-        return random.Next(0, 11);
+        return random.Next(0, bolosRestantes + 1);
     }
 }
