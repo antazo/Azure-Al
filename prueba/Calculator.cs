@@ -1,3 +1,5 @@
+namespace prueba;
+
 public class Calculator
 {
     public static string GenerateCalculator()
