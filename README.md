@@ -1,5 +1,9 @@
 # Azure AI
 
+🤖 My playground for C# and Azure.
+
+## Documentation
+
 We create our first console for tests:
 ```
 dotnet new console -n prueba
@@ -17,7 +21,6 @@ https://api.nuget.org/v3/index.json
 
 Libraries used in this project:
 ```
-# These are not compatible with net8.0
 dotnet add package Figgle --version 0.5.1
 dotnet add package ConsoleTables --version 2.4.2
 ```
@@ -25,9 +28,9 @@ More information:
  * https://github.com/drewnoakes/figgle
  * https://github.com/khalidabuhakmeh/ConsoleTables
 
-# Resources
+## Resources
 
-## C#
+### C#
 
 1. Escritura del primer código con C# (Introducción a C#, parte 1)
  * https://learn.microsoft.com/es-es/training/paths/get-started-c-sharp-part-1/
