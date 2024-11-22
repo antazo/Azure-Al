@@ -9,6 +9,8 @@ class Program
     {
         // Console.Clear();
         Console.WriteLine(Interstitial.GenerateIntro());
+        Console.WriteLine(AZ204.Sample());
+
 
         /* Archived lectures
         #region
@@ -52,11 +54,12 @@ class Program
         Console.WriteLine(Calculator.GenerateCalculator());
 
         Console.WriteLine(CodeKata.GeneratePrimos());
+        Console.WriteLine(CodeKataBowling.GenerateBowling());
+
         #endregion
         */
 
         // Pending
-        Console.WriteLine(CodeKataBowling.GenerateBowling());
 
 
     }
