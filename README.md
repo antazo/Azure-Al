@@ -32,10 +32,10 @@ More information:
 
 ### AZ-204
 
-1. Microsoft Certified: Azure Developer Associate - Certifications
- * https://learn.microsoft.com/en-us/credentials/certifications/azure-developer/?ns-enrollment-type=Collection&ns-enrollment-id=zw33f10167zn4o&practice-assessment-type=certification
+Microsoft Certified: Azure Developer Associate - Certifications
+  * https://learn.microsoft.com/en-us/credentials/certifications/azure-developer/?ns-enrollment-type=Collection&ns-enrollment-id=zw33f10167zn4o&practice-assessment-type=certification
 
-1. Curso AZ-204T00-A: Developing Solutions for Microsoft Azure
-* https://learn.microsoft.com/en-us/training/courses/az-204t00?ns-enrollment-type=Collection&ns-enrollment-id=zw33f10167zn4o
+Course AZ-204T00-A: Developing Solutions for Microsoft Azure
+  * https://learn.microsoft.com/en-us/training/courses/az-204t00?ns-enrollment-type=Collection&ns-enrollment-id=zw33f10167zn4o
 
 
