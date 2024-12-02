@@ -30,30 +30,12 @@ More information:
 
 ## Resources
 
-### C#
+### AZ-204
 
-1. Escritura del primer código con C# (Introducción a C#, parte 1)
- * https://learn.microsoft.com/es-es/training/paths/get-started-c-sharp-part-1/
+1. Microsoft Certified: Azure Developer Associate - Certifications
+ * https://learn.microsoft.com/en-us/credentials/certifications/azure-developer/?ns-enrollment-type=Collection&ns-enrollment-id=zw33f10167zn4o&practice-assessment-type=certification
 
-2. Creación y ejecución de aplicaciones de consola de C# sencillas (Introducción a C#, parte 2)
-* https://learn.microsoft.com/es-es/training/paths/get-started-c-sharp-part-2/
-
-3. Adición de lógica a aplicaciones de consola de C# (Introducción a C#, parte 3)
-* https://learn.microsoft.com/es-es/training/paths/get-started-c-sharp-part-3/
-
-4. Trabajo con datos de variables en aplicaciones de consola de C# (Introducción a C#, parte 4)
-* https://learn.microsoft.com/es-es/training/paths/get-started-c-sharp-part-4/
-
-5. Creación de métodos en aplicaciones de consola de C# (Introducción a C#, parte 5)
-* https://learn.microsoft.com/es-es/training/paths/get-started-c-sharp-part-5/
-
-6. Depuración de aplicaciones de consola de C# (Introducción a C#, parte 6)
-* https://learn.microsoft.com/es-es/training/paths/get-started-c-sharp-part-6/
-
-Compilación de aplicaciones web con ASP.NET Core para principiantes
-* https://learn.microsoft.com/es-es/training/paths/aspnet-core-web-app/
-
-6. Clasificación de rocas espaciales mediante Python e inteligencia artificial
-* https://learn.microsoft.com/es-es/training/paths/classify-space-rocks-artificial-intelligence-nasa/
+1. Curso AZ-204T00-A: Developing Solutions for Microsoft Azure
+* https://learn.microsoft.com/en-us/training/courses/az-204t00?ns-enrollment-type=Collection&ns-enrollment-id=zw33f10167zn4o
 
 
